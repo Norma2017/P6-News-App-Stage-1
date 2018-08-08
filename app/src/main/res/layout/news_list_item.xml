@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item that displays a news -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NewsListContainer">
+
+    <!-- Section Name & Date/Time container -->
+    <LinearLayout
+        android:id="@+id/section_date_container"
+        style="@style/Topic">
+
+        <!-- Section Name -->
+        <TextView
+            android:id="@+id/topic"
+            style="@style/NewsTopic"
+            tools:text="Health" />
+
+        <!-- Date/Time container -->
+        <LinearLayout
+            android:id="@+id/date_time_container"
+            style="@style/Author">
+
+            <!-- Date -->
+            <TextView
+                android:id="@+id/date"
+                style="@style/NewsDate"
+                tools:text="Nov 3, 2015" />
+
+            <!-- Time -->
+            <TextView
+                android:id="@+id/time"
+                style="@style/NewsTime"
+                tools:text="10:45 PM" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Image/Title container -->
+    <LinearLayout
+        android:id="@+id/image_title_container"
+        style="@style/title">
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/image"
+            style="@style/NewsImage"
+            android:contentDescription="@string/different_images"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            style="@style/NewsTitle"
+            tools:text="Example News" />
+    </LinearLayout>
+
+    <!-- Author name -->
+    <TextView
+        android:id="@+id/author"
+        style="@style/NewsAuthor"
+        tools:text="JoaoCarlo" />
+</LinearLayout>
